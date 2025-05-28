@@ -13,7 +13,7 @@ function checkInput(){
 
   //regular expression for a regular expression
 
-  const usPattern=/^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]\d{3}-\d{4}$/;
+  const usPattern = /^(1\s?)?(\d{3}|\(\d{3}\))[\s\-]?\d{3}[\s\-]?\d{4}$/;
   const resultDiv = document.getElementById("results-div");
       if (usPattern.test(userInput)) {
       resultDiv.textContent = `Valid US number: ${userInput}`;
